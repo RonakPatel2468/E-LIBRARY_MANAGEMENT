@@ -43,27 +43,23 @@ This is an E-Library Management API built using Node.js, Express, and MongoDB. I
 Install Dependencies
 
 bash
-Copy code
 npm install
+
 Set Up MongoDB Atlas
 
 Create a MongoDB Atlas account if you don't have one.
 Create a new cluster and set up a database.
 Add your current IP address to the IP Whitelist under Network Access.
-Create a .env File
 
+Create a .env File
 In the root directory of your project, create a .env file and add the following environment variables:
 Environment Variables
 plaintext
-Copy code
 MONGODB_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/<dbname>?retryWrites=true&w=majority
-PORT=9000
+PORT=8080
+
 Replace <username>, <password>, and <dbname> with your actual MongoDB credentials and the name of the database you created.
-Example .env File
-plaintext
-Copy code
-MONGODB_URI=mongodb+srv://alice:password123@cluster0.mongodb.net/eLibraryDB?retryWrites=true&w=majority
-PORT=9000
+
 Setup
 Connect to MongoDB
 
@@ -72,15 +68,14 @@ Verify that your database is accessible from your application.
 Run the Application
 
 bash
-Copy code
 npm start
 The API will start on the port specified in the .env file (default is 9000).
 Access the API
 
 Open your browser or a tool like Postman to interact with the API:
 plaintext
-Copy code
 http://localhost:9000
+
 API Endpoints
 Authentication
 
